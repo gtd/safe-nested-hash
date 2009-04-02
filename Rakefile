@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "safe-nested-hash"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{Populate deep nested hashes without initialization situps}
     gem.email = "gabe@websaviour.com"
     gem.homepage = "http://github.com/dasil003/safe-nested-hash"
     gem.authors = ["Gabe da Silveira"]
