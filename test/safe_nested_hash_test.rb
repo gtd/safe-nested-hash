@@ -40,14 +40,13 @@ class SafeNestedHashTest < Test::Unit::TestCase
       assert_equal SafeNestedHash::UndefinedHash, @hash[1][4].class
     end
 
-    should "not clobber existing value when adding to a partial chain" do
-      @hash[1][2][4][5] = 'c'
-      assert_equal 'c', @hash[1][2][4][5]
+    should "return an undefined hash which returns true for nil?" do
+      assert @hash[1][4].nil?
     end
 
     should "not clobber existing value when adding to a partial chain" do
       @hash[1][2][4][5] = 'c'
-      assert_equal 'a', @hash[1][2][3]
+      assert_equal 'c', @hash[1][2][4][5]
     end
 
     should "raise error if attempting to extend non-hash" do
