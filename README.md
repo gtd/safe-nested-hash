@@ -2,9 +2,9 @@
 
 Allows you to populate nested hashes without initializing every level first:
 
-    >> h = SafeNestedHash.new
-    >> h[1][2][3] = :foo
-    >> h
+    h = SafeNestedHash.new
+    h[1][2][3] = :foo
+    h
     => {1 => {2 => {3 => :foo}}}
 
 Don't be tempted by more concise implementations such as can be found at http://www.ruby-forum.com/topic/111524.  The fundamental challenge to overcome here is that accessing a non-existent key should not alter the original hash, yet setting a deeply nested hash needs to attach to the original hash (potentially) several levels up.  This is accomplished by means of a custom UndefinedHash class which tracks lookup path and reconstructs it if an assignment is found at the end: 
@@ -35,6 +35,6 @@ To check for existence of a key you must use nil?.  Smelly I know, and you can't
     h[2][3].nil?
     => true
 
-== Copyright
+## Copyright
 
 Copyright (c) 2009 Gabe da Silveira. See LICENSE for details.
