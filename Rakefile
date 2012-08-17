@@ -7,7 +7,7 @@ begin
     gem.name = "safe-nested-hash"
     gem.summary = %Q{Populate deep nested hashes without initialization situps}
     gem.email = "gabe@websaviour.com"
-    gem.homepage = "http://github.com/dasil003/safe-nested-hash"
+    gem.homepage = "http://github.com/gtd/safe-nested-hash"
     gem.authors = ["Gabe da Silveira"]
 
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
