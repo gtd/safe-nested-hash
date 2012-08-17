@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ["README.md", "LICENSE"]
   s.files = ["README.md", "VERSION.yml", "lib/safe_nested_hash.rb", "test/safe_nested_hash_test.rb", "test/test_helper.rb", "LICENSE"]
   s.has_rdoc = true
-  s.homepage = %q{http://github.com/dasil003/safe-nested-hash}
+  s.homepage = %q{http://github.com/gtd/safe-nested-hash}
   s.rdoc_options = ["--inline-source", "--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.1}
